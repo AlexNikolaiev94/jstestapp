@@ -1,0 +1,16 @@
+{
+    "collections": [
+        {
+            "id": 1,
+            "name": "Arcane Cynical Cursed Grimoire of the Possum",
+            "items": [
+                { "id": 1, "name": "Arcane Gloves of Laceration" },
+                { "id": 2, "name": "Cynical Flamberge of Gangrene" },
+                { "id": 3, "name": "Sulphurous Ocarina of Delirium" },
+                { "id": 4, "name": "Choleric Morningstar of Despair" },
+                { "id": 5, "name": "Flaming Eye of the Onion" },
+                { "id": 6, "name": "Feathered Butterknife of Sloth" }
+            ]
+        }
+    ]
+}

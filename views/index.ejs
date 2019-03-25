@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+              crossorigin="anonymous">
+        <link rel="stylesheet" href="/static/css/style.css">
+    </head>
+    <body>
+        <main class="container"
+              id="collection-container"
+              data-collection-id="<%= collection.id %>">
+            <h1>Delete items from "<%= collection.name %>" collection</h1>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Item Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% for (let item of collection.items) { %>
+                        <tr>
+                            <td>
+                                <input class="item"
+                                       type="checkbox"
+                                       data-item-id="<%= item.id %>"/>
+                            </td>
+                            <td>
+                                <p><%= item.name %></p>
+                            </td>
+                        </tr>
+                    <% } %>
+                </tbody>
+            </table>
+            <div><button type="button" id="delete-selected" disabled>Delete
+                    Selected</button></div>
+        </main>
+
+        <script src="/static/js/storage.js"></script>
+        <script src="/static/js/script.js"></script>
+    </body>
+</html>
